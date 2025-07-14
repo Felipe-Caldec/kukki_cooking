@@ -1,0 +1,50 @@
+{% load static %}
+{% load bootstrap5 %}
+<div>
+    <div class="container" style="background-color: black;">
+        <div class="head" style="display: flex; align-items: center; justify-content: center; gap: 2rem; padding: 2rem;">
+            <div class="img-container">
+                <img src="{% static 'logo_kc.jpeg' %}" alt="logo" style="width: 10rem; height: 10rem; border-radius: 100px;">
+            </div>
+            <div class="title-container" style="text-align: center; color: #ff4ff9;">
+                <h2><b>Kukki Cooking</b></h2>
+                <p><b>Gracias por visitar nuestra tienda</b></p>
+                <p><b>Entérate de los mejores productos disponibles</b></p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="d-grid gap-2" style="background-color: black;">
+            <div style="display: flex; justify-content: center; padding: 2rem;">
+                <a href="https://afroditas.getskedu.com/" target="_blank" rel="noopener"
+                style="display: flex; align-items: center; background-color: white; padding: 1rem; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; width: 300px;">
+                
+                <img src="{% static 'pedido.png' %}" alt="icono" style="width: 40px; height: 40px; margin-right: 1rem; border-radius: 8px;">
+                <span style="font-weight: bold; color: #333; font-size: 1rem;">Contactanos</span>
+                </a>
+            </div>
+            <div style="display: flex; justify-content: center; padding: 2rem;">
+                <a href="{% url 'catalogo-view' %}" target="_blank" rel="noopener"
+                style="display: flex; align-items: center; background-color: white; padding: 1rem; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; width: 300px;">
+                
+                <img src="{% static 'catalogo.png' %}" alt="icono" style="width: 40px; height: 40px; margin-right: 1rem; border-radius: 8px;">
+                <span style="font-weight: bold; color: #333; font-size: 1rem;">Conoce nuestro Catálogo</span>
+                </a>
+            </div>
+            <div style="display: flex; justify-content: center; padding: 2rem;">
+                <a href="https://wa.me/56940915582?text=Hola,%20quiero%20más%20información" target="_blank" rel="noopener"
+                style="display: flex; align-items: center; background-color: white; padding: 1rem; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; width: 300px;">
+                <img src="{% static 'logo_wsp.jpg' %}" alt="icono" style="width: 40px; height: 40px; margin-right: 1rem; border-radius: 8px;">
+                <span style="font-weight: bold; color: #333; font-size: 1rem;">WhatsApp</span>
+                </a>
+            </div>
+            <div style="display: flex; justify-content: center; padding: 2rem;">
+                <a href="https://www.instagram.com/kukii.cooking?igsh=MXQxbXp1czF0bTk0Mg==" target="_blank" rel="noopener"
+                style="display: flex; align-items: center; background-color: white; padding: 1rem; border-radius: 12px; text-decoration: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; width: 300px;">
+                <img src="{% static 'logo_ig.jpg' %}" alt="icono" style="width: 40px; height: 40px; margin-right: 1rem; border-radius: 8px;">
+                <span style="font-weight: bold; color: #333; font-size: 1rem;">Instagram</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
